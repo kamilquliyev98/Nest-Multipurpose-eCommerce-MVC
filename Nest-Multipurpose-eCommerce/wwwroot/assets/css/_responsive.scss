@@ -1,0 +1,80 @@
+@media (min-width: 992px) {
+    .col-lg-1-5 {
+        flex: 0 0 20%;
+        max-width: 20%;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #deals .single-deal {
+        margin-top: 100px;
+    }
+
+    #deals .section-header {
+        padding-bottom: 0;
+    }
+
+    #about-counter {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .download-app {
+        width: 80%;
+    }
+
+    .payment-method {
+        width: 70% !important;
+    }
+
+    #scrollToTop {
+        bottom: 30px !important;
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .help-left {
+        margin-bottom: 20%;
+    }
+
+    #newsletter {
+        form {
+            flex-direction: column;
+        }
+    }
+
+    #single-product {
+        .product-detail {
+            .detail-info {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+
+    #mobile-header,
+    .sidebar {
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        display: none;
+    }
+
+    #mobile-header {
+        display: block;
+    }
+}

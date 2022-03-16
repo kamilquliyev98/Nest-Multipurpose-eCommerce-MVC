@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    color: #fff;
+    background: $green;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+ol,
+ul {
+    margin: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+a,
+button,
+img,
+input,
+span,
+h4 {
+    transition: all .3s ease 0s;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $quicksand;
+    color: $darkGreen;
+    font-weight: 700;
+    line-height: 1.2;
+}

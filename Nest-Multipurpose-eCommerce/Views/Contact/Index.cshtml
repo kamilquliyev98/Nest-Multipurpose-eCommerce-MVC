@@ -1,0 +1,451 @@
+﻿<header>
+    <div class="header-middle d-none d-lg-block">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <div class="col-lg-2">
+                    <div class="header-logo">
+                        <a asp-controller="home" asp-action="index">
+                            <img src="~/assets/images/logo/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="search-section">
+                        <form action="#">
+                            <div class="search-box">
+                                <input type="text" placeholder="Search for items...">
+                                <i class="icofont-search-1"></i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="header-actions">
+
+                        <div class="header-action">
+                            <a href="#">
+                                <div>
+                                    <img src="~/assets/images/theme/icons/icon-compare.svg" alt="compare">
+                                    <span>3</span>
+                                </div>
+                                <p>Compare</p>
+                            </a>
+                        </div>
+
+                        <div class="header-action">
+                            <a href="#">
+                                <div>
+                                    <img src="~/assets/images/theme/icons/icon-heart.svg" alt="wishlist">
+                                    <span>6</span>
+                                </div>
+                                <p>Wishlist</p>
+                            </a>
+                        </div>
+
+                        <div class="header-action">
+                            <a href="cart.html">
+                                <div>
+                                    <img src="~/assets/images/theme/icons/icon-cart.svg" alt="cart">
+                                    <span>2</span>
+                                </div>
+                                <p>Cart</p>
+                            </a>
+                        </div>
+
+                        <div class="header-action">
+                            <div class="dropdown account-hover">
+                                <a href="#">
+                                    <div>
+                                        <img src="~/assets/images/theme/icons/icon-user.svg" alt="user">
+                                    </div>
+                                    <p>Account</p>
+                                </a>
+                                <div class="dropdown-content account-dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fi fi-rs-user"></i>
+                                                <span>My Account</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fi fi-rs-location-alt"></i>
+                                                <span>Order Tracking</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fi fi-rs-label"></i>
+                                                <span>My Voucher</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fi fi-rs-heart"></i>
+                                                <span>My Wishlist</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fi fi-rs-settings-sliders"></i>
+                                                <span>Setting</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fi fi-rs-sign-out"></i>
+                                                <span>Sign out</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-bottom-2 d-none d-lg-block">
+
+        <div class="trending-categories d-none d-lg-block">
+            <a href="#">
+                <i class="fi-rs-apps"></i>
+                <span>Browse All Categories</span>
+                <i class="fi-rs-angle-down"></i>
+            </a>
+        </div>
+
+        <div class="header-menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a asp-controller="home" asp-action="index">Home</a>
+                    </li>
+                    <li>
+                        <a asp-controller="about" asp-action="index">About</a>
+                    </li>
+                    <li>
+                        <a asp-controller="shop" asp-action="index">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">Mega menu</a>
+                    </li>
+                    <li>
+                        <a asp-controller="contact" asp-action="index">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hotline">
+            <div class="hotline-icon">
+                <img src="~/assets/images/theme/icons/icon-headphone.svg" alt="hotline">
+            </div>
+            <div class="hotline-call">
+                <p>1900 - 888</p>
+                <span>24/7 Support Center</span>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<section id="contact-page-header">
+    <div class="page-header-2">
+        <div class="container-fluid">
+            <div class="breadcrumb-2">
+                <a asp-controller="home" asp-action="index">
+                    <i class="fi-rs-home ms-0 me-1"></i>
+                    <span>Home</span>
+                </a>
+                <i class="fa-solid fa-angle-right"></i>
+                <span>Pages</span>
+                <i class="fa-solid fa-angle-right"></i>
+                <span>Contact</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="how-help">
+    <div class="container">
+        <div class="row align-items-end">
+
+            <div class="col-lg-4 mb-lg-0 mb-md-5 mb-sm-5">
+                <div class="help-left">
+                    <h4>How we can help you?</h4>
+                    <h1>Let us know how we can help you</h1>
+                    <p class="top-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                        ullamcorper
+                        mattis, pulvinar dapibus leo.
+                    </p>
+                    <p class="bottom-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                        ullamcorper
+                        mattis, pulvinar dapibus leo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="help-right">
+                    <div class="row">
+
+                        <div class="col-lg-6 mb-4">
+                            <div class="single-step">
+                                <h5>01. Visit Feedback</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                                    nec
+                                    ullamcorper mattis, pulvinar dapibus leo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div class="single-step">
+                                <h5>02. Employer Services</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                                    nec
+                                    ullamcorper mattis, pulvinar dapibus leo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-lg-0 mb-4">
+                            <div class="single-step">
+                                <h5 class="main-step">03. Billing Inquiries</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                                    nec
+                                    ullamcorper mattis, pulvinar dapibus leo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="single-step">
+                                <h5>04.General Inquiries</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                                    nec
+                                    ullamcorper mattis, pulvinar dapibus leo.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="map">
+    <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4283503014667!2d49.85172681476105!3d40.377198065967846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d077c61fef3%3A0xfa4594c97092ca01!2sAF%20Business%20House!5e0!3m2!1sen!2s!4v1646781388908!5m2!1sen!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="locations">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="single-location">
+                        <h4>Office</h4>
+                        <p>205 North Michigan Avenue, Suite 810</p>
+                        <p>Chicago, 60601, USA</p>
+                        <p><abbr title="Phone">Phone:</abbr> (123) 456-7890</p>
+                        <p><abbr title="Email">Email:</abbr> contact@Evara.com</p>
+                        <a href="#" class="hover-up">
+                            <i class="fi-rs-marker"></i>
+                            <span>View map</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="single-location">
+                        <h4>Studio</h4>
+                        <p>205 North Michigan Avenue, Suite 810</p>
+                        <p>Chicago, 60601, USA</p>
+                        <p><abbr title="Phone">Phone:</abbr> (123) 456-7890</p>
+                        <p><abbr title="Email">Email:</abbr> contact@Evara.com</p>
+                        <a href="#" class="hover-up">
+                            <i class="fi-rs-marker"></i>
+                            <span>View map</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="single-location">
+                        <h4>Shop</h4>
+                        <p>205 North Michigan Avenue, Suite 810</p>
+                        <p>Chicago, 60601, USA</p>
+                        <p><abbr title="Phone">Phone:</abbr> (123) 456-7890</p>
+                        <p><abbr title="Email">Email:</abbr> contact@Evara.com</p>
+                        <a href="#" class="hover-up">
+                            <i class="fi-rs-marker"></i>
+                            <span>View map</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact-us">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-8">
+                <div class="contact-form">
+                    <h5>Contact form</h5>
+                    <h2>Drop Us a Line</h2>
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single-input form-firstname">
+                                    <input type="text" name="firsname" id="firsname" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single-input form-email">
+                                    <input type="email" name="email" id="email" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single-input form-phone">
+                                    <input type="tel" name="phone" id="phone" placeholder="Your Phone">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="single-input form-subject">
+                                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="textarea form-message">
+                                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                                </div>
+                                <div class="submit-btn form-btn">
+                                    <button type="submit">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-4 d-lg-block d-none">
+                <div class="form-image">
+                    <img src="~/assets/images/page/contact-2.png" alt="image">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="newsletter">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="newsletter-all">
+                    <div class="newsletter-content">
+                        <h2>Stay home & get your daily<br>needs from our shop</h2>
+                        <p>Start Your Daily Shopping with <span>Nest Mart</span></p>
+                        <form action="#">
+                            <input type="email" name="" id="" placeholder="Your emaill address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <img src="~/assets/images/banner/banner-13.png" alt="newsletter">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="featured">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                <div class="single-feature">
+                    <div class="feature-icon">
+                        <img src="~/assets/images/theme/icons/icon-1.svg" alt="icon">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Best prices & offers</h3>
+                        <p>Orders $50 or more</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                <div class="single-feature">
+                    <div class="feature-icon">
+                        <img src="~/assets/images/theme/icons/icon-2.svg" alt="icon">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Free delivery</h3>
+                        <p>24/7 amazing services</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                <div class="single-feature">
+                    <div class="feature-icon">
+                        <img src="~/assets/images/theme/icons/icon-3.svg" alt="icon">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Great daily deal</h3>
+                        <p>When you sign up</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                <div class="single-feature">
+                    <div class="feature-icon">
+                        <img src="~/assets/images/theme/icons/icon-4.svg" alt="icon">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Wide assortment</h3>
+                        <p>Mega Discounts</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1-5 col-md-4 col-12 col-sm-6 mb-md-4 mb-xl-0">
+                <div class="single-feature">
+                    <div class="feature-icon">
+                        <img src="~/assets/images/theme/icons/icon-5.svg" alt="icon">
+                    </div>
+                    <div class="feature-text">
+                        <h3>Easy returns</h3>
+                        <p>Within 30 days</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

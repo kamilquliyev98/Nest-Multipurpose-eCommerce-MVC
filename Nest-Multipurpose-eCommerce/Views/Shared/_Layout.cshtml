@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/assets/images/favicon/favicon.svg" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- IcoFont -->
+    <link rel="stylesheet" href="~/assets/fonts/icofont/icofont.min.css">
+
+    <!-- Flaticon uicons CSS -->
+    <link rel="stylesheet" href="~/assets/fonts/uicons/uicons-regular-straight.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- AOS Plugin CSS -->
+    <link rel="stylesheet" href="~/assets/aos-master/dist/aos.css">
+
+    <!-- Slick Plugin CSS -->
+    <link rel="stylesheet" href="~/assets/slick/slick/slick.css">
+    <link rel="stylesheet" href="~/assets/slick/slick/slick-theme.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+</head>
+<body>
+    <div class="overlay-header"></div>
+
+    <div class="sidebar">
+        <div class="sidebar-inner">
+            <div class="top">
+                <div class="logo">
+                    <img src="~/assets/images/logo/logo.svg" alt="logo">
+                </div>
+                <div class="close" id="btn-close-navbar">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="search">
+                    <input type="text" placeholder="Search for items...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="sidebar-menu">
+                    <nav>
+                        <ul class="navigation">
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="index.html">Home</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Home 1</a></li>
+                                    <li><a href="#">Home 2</a></li>
+                                    <li><a href="#">Home 3</a></li>
+                                    <li><a href="#">Home 4</a></li>
+                                    <li><a href="#">Home 5</a></li>
+                                    <li><a href="index.html">Home 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="shop.html">Shop</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Shop Grid - Right Sidebar</a></li>
+                                    <li><a href="#">Shop Grid - Left Sidebar</a></li>
+                                    <li><a href="#">Shop List - Right Sidebar</a></li>
+                                    <li><a href="#">Shop List - Left Sidebar</a></li>
+                                    <li><a href="shop.html">Shop - Wide</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="shop-product.html">Single Product</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Product - Right Sidebar</a></li>
+                                            <li><a href="#">Product - Left Sidebar</a></li>
+                                            <li><a href="#">Product - No Sidebar</a></li>
+                                            <li><a href="#">Product - Vendor Info</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Shop - Filter</a></li>
+                                    <li><a href="#">Shop - Wishlist</a></li>
+                                    <li><a href="cart.html">Shop - Cart</a></li>
+                                    <li><a href="#">Shop - Checkout</a></li>
+                                    <li><a href="#">Shop - Compare</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Shop Invoice</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Shop Invoice 1</a></li>
+                                            <li><a href="#">Shop Invoice 2</a></li>
+                                            <li><a href="#">Shop Invoice 3</a></li>
+                                            <li><a href="#">Shop Invoice 4</a></li>
+                                            <li><a href="#">Shop Invoice 5</a></li>
+                                            <li><a href="#">Shop Invoice 6</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Vendors</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Vendors Grid</a></li>
+                                    <li><a href="#">Vendors List</a></li>
+                                    <li><a href="#">Vendor Details 01</a></li>
+                                    <li><a href="#">Vendor Details 02</a></li>
+                                    <li><a href="#">Vendor Dashboard</a></li>
+                                    <li><a href="#">Vendor Guide</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Mega Menu</a>
+                                <ul class="dropdown">
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Women's Fashion</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Blouses & Shirts</a></li>
+                                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                            <li><a href="#">Women's Sets</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Men's Fashion</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Casual Faux Leather</a></li>
+                                            <li><a href="#">Genuine Leather</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Technology</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Gaming Laptops</a></li>
+                                            <li><a href="#">Ultraslim Laptops</a></li>
+                                            <li><a href="#">Tablets</a></li>
+                                            <li><a href="#">Laptop Accessories</a></li>
+                                            <li><a href="#">Tablet Accessories</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Blog</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Blog Category Grid</a></li>
+                                    <li><a href="#">Blog Category List</a></li>
+                                    <li><a href="#">Blog Category Big</a></li>
+                                    <li><a href="#">Blog Category Wide</a></li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                        <a href="#">Single Product Layout</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Left Sidebar</a></li>
+                                            <li><a href="#">Right Sidebar</a></li>
+                                            <li><a href="#">No Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Pages</a>
+                                <ul class="dropdown">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Purchase Guide</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">Language</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">French</a></li>
+                                    <li><a href="#">German</a></li>
+                                    <li><a href="#">Spanish</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="info">
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Our location
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                        Log In / Sign Up
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-headphones"></i>
+                        (+01) - 2345 - 6789
+                    </a>
+                </div>
+                <div class="socials">
+                    <h6>Follow Us</h6>
+                    <a href="#">
+                        <img src="~/assets/images/theme/icons/icon-facebook-white.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="~/assets/images/theme/icons/icon-twitter-white.svg" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="~/assets/images/theme/icons/icon-instagram-white.svg" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="~/assets/images/theme/icons/icon-pinterest-white.svg" alt="pinterest">
+                    </a>
+                    <a href="#">
+                        <img src="~/assets/images/theme/icons/icon-youtube-white.svg" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <div class="col-2">
+                    <div class="navbar-collapse-button" id="btn-open-navbar">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <div class="logo">
+                        <img src="~/assets/images/logo/logo.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="header-actions-2">
+                        <div class="header-action">
+                            <a href="#">
+                                <img src="~/assets/images/theme/icons/icon-heart.svg" alt="wishlist">
+                                <span>2</span>
+                            </a>
+                        </div>
+                        <div class="header-action">
+                            <a href="cart.html">
+                                <img src="~/assets/images/theme/icons/icon-cart.svg" alt="wishlist">
+                                <span>2</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    @RenderBody()
+
+    <footer>
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer-box" data-aos="fade-up" data-aos-delay="100">
+                            <div class="footer-logo">
+                                <a asp-controller="home" asp-action="index">
+                                    <img src="assets/images/logo/logo.svg" alt="logo">
+                                </a>
+                                <p>Awesome grocery store website template</p>
+                            </div>
+                            <div class="footer-contact-info">
+                                <ul>
+                                    <li>
+                                        <img src="assets/images/theme/icons/icon-location.svg" alt="location">
+                                        <strong>Address:</strong>
+                                        <span>5171 W Campbell Ave undefined Kent, Utah 53127 United States</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/theme/icons/icon-contact.svg" alt="contact">
+                                        <strong>Call Us:</strong>
+                                        <span>(+91) - 540-025-124553</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/theme/icons/icon-email-2.svg" alt="email">
+                                        <strong>Email:</strong>
+                                        <span>sale@Nest.com</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/theme/icons/icon-clock.svg" alt="clock">
+                                        <strong>Hours:</strong>
+                                        <span>10:00 - 18:00, Mon - Sat</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer-box" data-aos="fade-up" data-aos-delay="200">
+                            <h4 class="box-title">Company</h4>
+                            <ul class="footer-list">
+                                <li>
+                                    <a asp-controller="about" asp-action="index">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Delivery Information</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a asp-controller="contact" asp-action="index">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Support Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Careers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer-box" data-aos="fade-up" data-aos-delay="300">
+                            <h4 class="box-title">Account</h4>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="#">Sign In</a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">View Cart</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Wishlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Track My Order</a>
+                                </li>
+                                <li>
+                                    <a href="#">Help Ticket</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shipping Details</a>
+                                </li>
+                                <li>
+                                    <a href="#">Compare products</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer-box" data-aos="fade-up" data-aos-delay="400">
+                            <h4 class="box-title">Corporate</h4>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="#">Become a Vendor</a>
+                                </li>
+                                <li>
+                                    <a href="#">Affiliate Program</a>
+                                </li>
+                                <li>
+                                    <a href="#">Farm Business</a>
+                                </li>
+                                <li>
+                                    <a href="#">Farm Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Suppliers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Accessibility</a>
+                                </li>
+                                <li>
+                                    <a href="#">Promotions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer-box" data-aos="fade-up" data-aos-delay="500">
+                            <h4 class="box-title">Popular</h4>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="#">Milk & Flavoured Milk</a>
+                                </li>
+                                <li>
+                                    <a href="#">Butter and Margarine</a>
+                                </li>
+                                <li>
+                                    <a href="#">Eggs Substitutes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Marmalades</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sour Cream and Dips</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tea & Kombucha</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cheese</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6">
+                        <div class="footer-box" data-aos="fade-up" data-aos-delay="600">
+                            <h4 class="box-title">Install App</h4>
+                            <p>From App Store or Google Play</p>
+                            <div class="download-app">
+                                <a href="#" class="hover-up">
+                                    <img src="assets/images/theme/app-store.jpg" alt="app store">
+                                </a>
+                                <a href="#" class="hover-up">
+                                    <img src="assets/images/theme/google-play.jpg" alt="google play">
+                                </a>
+                            </div>
+                            <p class="secure-gateway">Secured Payment Gateways</p>
+                            <img src="assets/images/theme/payment-method.png" alt="payment method"
+                                 class="payment-method">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="fb-col">
+                            <p>
+                                &copy;
+                                <script>
+                                    document.write(new Date().getFullYear())
+                                </script>, <strong>Nest</strong> - HTML Ecommerce Template
+                            </p>
+                            <p>All rights reserved</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 text-center d-none d-xl-block">
+                        <div class="fb-col">
+                            <div class="hotline-numbers">
+                                <div class="hotline">
+                                    <div class="hotline-icon">
+                                        <img src="assets/images/theme/icons/phone-call.svg" alt="hotline">
+                                    </div>
+                                    <div class="hotline-call">
+                                        <p>1900 - 6666</p>
+                                        <span>24/7 Support Center</span>
+                                    </div>
+                                </div>
+                                <div class="hotline">
+                                    <div class="hotline-icon">
+                                        <img src="assets/images/theme/icons/phone-call.svg" alt="hotline">
+                                    </div>
+                                    <div class="hotline-call">
+                                        <p>1900 - 8888</p>
+                                        <span>24/7 Support Center</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 d-none d-md-block">
+                        <div class="fb-col">
+                            <div class="follow-discount">
+                                <div class="follow-us">
+                                    <h6>Follow Us</h6>
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-pinterest-p"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-brands fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p>Up to 15% discount on your first subscribe</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <a href="javascript:void(0)" id="scrollToTop" class="hover-up">
+        <i class="icofont-arrow-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="~/assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- AOS JS -->
+    <script src="~/assets/aos-master/dist/aos.js"></script>
+    <!-- Slick Plugin JS -->
+    <script src="~/assets/slick/slick/slick.min.js"></script>
+    <!-- Custom JS -->
+    <script src="~/assets/js/main.js"></script>
+</body>
+
+</html>
