@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Nest_Multipurpose_eCommerce.DAL;
+using Nest_Multipurpose_eCommerce.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +11,17 @@ namespace Nest_Multipurpose_eCommerce.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly NestDbContext _context;
+        public HomeController(NestDbContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            List<Product> products = _context.Products.Include(c => c.Category).Include(o => o.Owner).ToList();
+
+            return View(products);
         }
     }
 }

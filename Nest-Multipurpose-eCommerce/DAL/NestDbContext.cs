@@ -12,6 +12,8 @@ namespace Nest_Multipurpose_eCommerce.DAL
         public NestDbContext(DbContextOptions<NestDbContext> options) : base(options) { }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Owner> Owners { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Deal> Deals { get; set; }
     }
 }
