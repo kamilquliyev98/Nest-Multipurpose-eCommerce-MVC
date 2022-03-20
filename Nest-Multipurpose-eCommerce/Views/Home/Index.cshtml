@@ -1,4 +1,8 @@
-﻿@model List<Product>
+﻿@{
+    ViewBag.Title = "Nest - Multipurpose eCommerce";
+}
+
+@model List<Product>
 
 <header>
     <div class="header-top">
@@ -8,7 +12,7 @@
                 <div class="col-lg-4">
                     <div class="ht-left">
                         <ul>
-                            <li><a href="~/about.html">About us</a></li>
+                            <li><a asp-controller="about" asp-action="index">About us</a></li>
                             <li><a href="#">My account</a></li>
                             <li><a href="#">Wishlist</a></li>
                             <li><a href="#">Order tracking</a></li>
@@ -291,70 +295,70 @@
 
             @foreach (Product product in Model)
             {
-             <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
-                <div class="product-card">
-                    <div class="product-card-top">
-                        <a href="~/shop-product.html">
-                            <img src="~/assets/images/products/@product.Image" alt="product" class="default-img">
-                            <img src="~/assets/images/products/@product.HoverImage" alt="product" class="hover-img">
-                        </a>
-
-                        @if (@product.Badge != null && @product.BadgeText != null)
-                        {
-                        <div class="product-badge">
-                            <span class="@product.Badge-badge">@product.BadgeText</span>
-                        </div>
-                        }
-
-                        <div class="product-action">
-                            <a href="#">
-                                <i class="fi-rs-heart"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fi-rs-shuffle"></i>
-                            </a>
+                <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
+                    <div class="product-card">
+                        <div class="product-card-top">
                             <a href="~/shop-product.html">
-                                <i class="fi-rs-eye"></i>
+                                <img src="~/assets/images/products/@product.Image" alt="product" class="default-img">
+                                <img src="~/assets/images/products/@product.HoverImage" alt="product" class="hover-img">
                             </a>
-                        </div>
-                    </div>
-                    <div class="product-card-bottom">
-                        <div class="product-category">
-                            <a href="#">@product.Category.Name</a>
-                        </div>
 
-                        <h2>
-                            <a href="~/shop-product.html">@product.Name</a>
-                        </h2>
+                            @if (@product.Badge != null && @product.BadgeText != null)
+                            {
+                                <div class="product-badge">
+                                    <span class="@product.Badge-badge">@product.BadgeText</span>
+                                </div>
+                            }
 
-                        <div class="product-rate">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <span>(4.0)</span>
-                        </div>
-
-                        <div class="product-owner">
-                            <p>By <a href="#">@product.Owner.Name</a></p>
-                        </div>
-
-                        <div class="product-sale-info">
-                            <div class="product-price">
-                                <span>$@product.Price</span>
-                                <s>$@product.OldPrice</s>
-                            </div>
-                            <div class="add-cart">
+                            <div class="product-action">
                                 <a href="#">
-                                    <i class="fi-rs-shopping-cart"></i>
-                                    <span>Add</span>
+                                    <i class="fi-rs-heart"></i>
                                 </a>
+                                <a href="#">
+                                    <i class="fi-rs-shuffle"></i>
+                                </a>
+                                <a href="~/shop-product.html">
+                                    <i class="fi-rs-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-category">
+                                <a href="#">@product.Category.Name</a>
+                            </div>
+
+                            <h2>
+                                <a href="~/shop-product.html">@product.Name</a>
+                            </h2>
+
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(4.0)</span>
+                            </div>
+
+                            <div class="product-owner">
+                                <p>By <a href="#">@product.Owner.Name</a></p>
+                            </div>
+
+                            <div class="product-sale-info">
+                                <div class="product-price">
+                                    <span>$@product.Price</span>
+                                    <s>$@product.OldPrice</s>
+                                </div>
+                                <div class="add-cart">
+                                    <a href="#">
+                                        <i class="fi-rs-shopping-cart"></i>
+                                        <span>Add</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-             </div>
             }
 
         </div>
