@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Nest_Multipurpose_eCommerce.DAL;
 
 namespace Nest_Multipurpose_eCommerce.Migrations
 {
     [DbContext(typeof(NestDbContext))]
-    partial class NestDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220321220604_AddedStockStatus")]
+    partial class AddedStockStatus
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -126,10 +128,6 @@ namespace Nest_Multipurpose_eCommerce.Migrations
 
                     b.Property<double>("Price")
                         .HasColumnType("float");
-
-                    b.Property<string>("ShortDescription")
-                        .HasColumnType("nvarchar(1000)")
-                        .HasMaxLength(1000);
 
                     b.Property<string>("StockStatus")
                         .HasColumnType("nvarchar(50)")

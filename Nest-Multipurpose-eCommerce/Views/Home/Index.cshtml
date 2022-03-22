@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Nest - Multipurpose eCommerce";
+    ViewData["Title"] = "Nest - Multipurpose eCommerce";
 }
 
 @model List<Product>
@@ -298,7 +298,7 @@
                 <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
                     <div class="product-card">
                         <div class="product-card-top">
-                            <a href="~/shop-product.html">
+                            <a asp-controller="shop" asp-action="product" asp-route-id="@product.Id">
                                 <img src="~/assets/images/products/@product.Image" alt="product" class="default-img">
                                 <img src="~/assets/images/products/@product.HoverImage" alt="product" class="hover-img">
                             </a>
@@ -317,7 +317,7 @@
                                 <a href="#">
                                     <i class="fi-rs-shuffle"></i>
                                 </a>
-                                <a href="~/shop-product.html">
+                                <a asp-controller="shop" asp-action="product" asp-route-id="@product.Id">
                                     <i class="fi-rs-eye"></i>
                                 </a>
                             </div>
@@ -328,7 +328,7 @@
                             </div>
 
                             <h2>
-                                <a href="~/shop-product.html">@product.Name</a>
+                                <a asp-controller="shop" asp-action="product" asp-route-id="@product.Id">@product.Name</a>
                             </h2>
 
                             <div class="product-rate">
