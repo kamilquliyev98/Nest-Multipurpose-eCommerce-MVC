@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Nest_Multipurpose_eCommerce.DAL;
 using Nest_Multipurpose_eCommerce.Models;
+using Nest_Multipurpose_eCommerce.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,20 +20,30 @@ namespace Nest_Multipurpose_eCommerce.Controllers
 
         public IActionResult Index()
         {
-            List<Product> products = _context.Products.Include(c => c.Category).Include(o => o.Owner).ToList();
+            //List<Product> products = _context.Products.Include(c => c.Category).Include(o => o.Owner).ToList();
 
-            return View(products);
+            ShopVM shopVM = new ShopVM
+            {
+                Products = _context.Products.Include(c => c.Category).Include(o => o.Owner).ToList()
+            };
+
+            return View(shopVM);
         }
 
         public IActionResult Product(int? id)
         {
-            if (id == null) return BadRequest();
+            //if (id == null) return BadRequest();
 
-            if (!_context.Products.Any(p => p.Id == id)) return NotFound();
+            //if (!_context.Products.Any(p => p.Id == id)) return NotFound();
 
-            Product product = _context.Products.Include(c => c.Category).FirstOrDefault(p => p.Id == id);
+            //Product product = _context.Products.Include(c => c.Category).FirstOrDefault(p => p.Id == id);
 
-            return View(product);
+            ShopVM shopVM = new ShopVM
+            {
+                Product = _context.Products.Include(c => c.Category).FirstOrDefault(p => p.Id == id)
+            };
+
+            return View(shopVM);
         }
     }
 }

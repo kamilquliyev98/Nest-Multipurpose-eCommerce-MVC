@@ -2,7 +2,7 @@
     ViewData["Title"] = "Nest - Shop";
 }
 
-@model List<Product>
+@model ShopVM
 
 <header>
     <div class="header-middle d-none d-lg-block">
@@ -240,7 +240,7 @@
 
         <div class="row justify-content-evenly">
 
-            @foreach (Product product in Model)
+            @foreach (Product product in Model.Products)
             {
                 <div class="col-xl-2 col-lg-1-5 col-md-4 col-sm-6 col-12">
                     <div class="product-card">

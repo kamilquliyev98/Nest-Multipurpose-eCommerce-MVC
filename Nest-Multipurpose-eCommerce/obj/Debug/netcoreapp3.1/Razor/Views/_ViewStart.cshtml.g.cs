@@ -13,21 +13,21 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "C:\Users\Kamil\source\repos\Nest-Multipurpose-eCommerce\Nest-Multipurpose-eCommerce\Views\_ViewImports.cshtml"
+#line 3 "C:\Users\Kamil\source\repos\Nest-Multipurpose-eCommerce\Nest-Multipurpose-eCommerce\Views\_ViewImports.cshtml"
 using Nest_Multipurpose_eCommerce.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Kamil\source\repos\Nest-Multipurpose-eCommerce\Nest-Multipurpose-eCommerce\Views\_ViewImports.cshtml"
+#line 4 "C:\Users\Kamil\source\repos\Nest-Multipurpose-eCommerce\Nest-Multipurpose-eCommerce\Views\_ViewImports.cshtml"
 using Nest_Multipurpose_eCommerce.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dffaabace6c0f6dd756616011ea3f36d70795eb9", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1c432ef33e04f19385f46fa02e0a276f49fdb182", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

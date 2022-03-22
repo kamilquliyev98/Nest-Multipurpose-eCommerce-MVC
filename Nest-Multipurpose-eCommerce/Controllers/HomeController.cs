@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Nest_Multipurpose_eCommerce.DAL;
 using Nest_Multipurpose_eCommerce.Models;
+using Nest_Multipurpose_eCommerce.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,9 +20,14 @@ namespace Nest_Multipurpose_eCommerce.Controllers
 
         public IActionResult Index()
         {
-            List<Product> products = _context.Products.Include(c => c.Category).Include(o => o.Owner).ToList();
+            //List<Product> products = _context.Products.Include(c => c.Category).Include(o => o.Owner).ToList();
 
-            return View(products);
+            HomeVM homeVM = new HomeVM 
+            {
+                Products = _context.Products.Include(c => c.Category).Include(o => o.Owner).ToList()
+            };
+
+            return View(homeVM);
         }
     }
 }

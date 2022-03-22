@@ -556,11 +556,10 @@
     <!-- AOS JS -->
     <script src="~/assets/aos-master/dist/aos.js"></script>
     <!-- Slick Plugin JS -->
-    <script src="~/assets/slick/slick/slick.min.js"></script>
+    @RenderSection("slickjs", required: false)
     <!-- Custom JS -->
     <script src="~/assets/js/main.js"></script>
-    <script src="~/assets/js/filter-range.js"></script>
-    <script src="~/assets/js/image.js"></script>
+    @RenderSection("filterandimagejs", required: false)
 </body>
 
 </html>
