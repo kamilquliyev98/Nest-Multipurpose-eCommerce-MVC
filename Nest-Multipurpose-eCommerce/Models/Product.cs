@@ -35,6 +35,5 @@ namespace Nest_Multipurpose_eCommerce.Models
 
         public int OwnerId { get; set; }
         public Owner Owner { get; set; }
-        public object Categories { get; internal set; }
     }
 }
